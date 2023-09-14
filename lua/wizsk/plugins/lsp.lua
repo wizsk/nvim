@@ -6,7 +6,7 @@ lsp.ensure_installed({
   -- 'tsserver',
   'rust_analyzer',
   'gopls',
-  'lua-language-server',
+  'lua_ls',
 })
 
 
