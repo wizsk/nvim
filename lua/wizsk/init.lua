@@ -15,6 +15,8 @@ local wizskGroup = augroup('wizskGroup', {})
 local autocmd = vim.api.nvim_create_autocmd
 local yank_group = augroup('HighlightYank', {})
 
+
+
 -- reload suff
 -- pore dehum ni kita kore
 function R(name)
@@ -32,13 +34,18 @@ autocmd('TextYankPost', {
     end,
 })
 
-autocmd({"BufWritePre"}, {
+autocmd({ "BufWritePre" }, {
     group = wizskGroup,
     pattern = "*",
     command = [[%s/\s\+$//e]],
 })
 
+
+-- open netrw if no file provided
+if vim.fn.argc() == 0 then
+    vim.cmd('Explore!')
+end
+-- netrw style change
 vim.g.netrw_browse_split = 0
 vim.g.netrw_banner = 0
 vim.g.netrw_winsize = 25
-
