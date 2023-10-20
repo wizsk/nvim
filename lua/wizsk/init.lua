@@ -5,8 +5,8 @@ require("wizsk.plugins.treesitter")
 require("wizsk.plugins.mason")
 require("wizsk.plugins.telescope")
 require("wizsk.plugins.lsp")
-require("wizsk.plugins.zenmode")
-require("wizsk.plugins.harpoon")
+-- require("wizsk.plugins.zenmode")
+-- require("wizsk.plugins.harpoon")
 require("wizsk.plugins.undotree")
 
 local augroup = vim.api.nvim_create_augroup
@@ -41,10 +41,6 @@ autocmd({ "BufWritePre" }, {
 })
 
 
--- open netrw if no file provided
-if vim.fn.argc() == 0 then
-    vim.cmd('Explore!')
-end
 -- netrw style change
 vim.g.netrw_browse_split = 0
 vim.g.netrw_banner = 0

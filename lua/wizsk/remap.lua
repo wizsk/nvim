@@ -11,8 +11,6 @@ vim.opt.spelllang = 'en_us'
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
--- background
-vim.keymap.set("n", "<leader>t", vim.cmd.TransparentToggle)
 -- cursor
 vim.opt.guicursor = ""
 -- cp pasete

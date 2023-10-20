@@ -132,20 +132,20 @@ require('lazy').setup({
   },
 
   -- prime plugs
-  { 'ThePrimeagen/vim-be-good' },
-  {
-    'ThePrimeagen/harpoon',
-    dependencies = { 'nvim-lua/plenary.nvim' }
-  },
+  -- { 'ThePrimeagen/vim-be-good' },
+  -- {
+  --   'ThePrimeagen/harpoon',
+  --   dependencies = { 'nvim-lua/plenary.nvim' }
+  -- },
 
-  {
-    "folke/zen-mode.nvim",
-    opts = {
-      -- your configuration comes here
-      -- or leave it empty to use the default settings
-      -- refer to the configuration section below
-    }
-  },
+  -- {
+  --   "folke/zen-mode.nvim",
+  --   opts = {
+  -- your configuration comes here
+  -- or leave it empty to use the default settings
+  -- refer to the configuration section below
+  -- }
+  -- },
   -- { 'nvim-tree/nvim-web-devicons' },
   -- { 'prichrd/netrw.nvim' },
 }, {})
