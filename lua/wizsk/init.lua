@@ -17,6 +17,7 @@ local yank_group = augroup('HighlightYank', {})
 
 
 
+
 -- reload suff
 -- pore dehum ni kita kore
 function R(name)
@@ -39,6 +40,23 @@ autocmd({ "BufWritePre" }, {
     pattern = "*",
     command = [[%s/\s\+$//e]],
 })
+
+autocmd({ "BufWritePre" }, {
+    group = wizskGroup,
+    pattern = "*",
+    callback = function()
+        vim.lsp.buf.format()
+    end,
+})
+
+autocmd({ "BufWritePre" }, {
+    pattern = "*.go",
+    callback = function()
+        require("go.format").goimport()
+    end,
+})
+
+
 
 
 -- netrw style change
