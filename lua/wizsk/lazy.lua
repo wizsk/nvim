@@ -143,14 +143,15 @@ require('lazy').setup({
     event = { "CmdlineEnter" },
     ft = { "go", 'gomod' },
     build = ':lua require("go.install").update_all_sync()' -- if you need to install/update all binaries
-  } ,
+  },
 
   -- prime plugs
   -- { 'ThePrimeagen/vim-be-good' },
-  -- {
-  --   'ThePrimeagen/harpoon',
-  --   dependencies = { 'nvim-lua/plenary.nvim' }
-  -- },
+  {
+    'ThePrimeagen/harpoon',
+    branch = "harpoon2",
+    dependencies = { 'nvim-lua/plenary.nvim' }
+  },
 
   -- {
   --   "folke/zen-mode.nvim",

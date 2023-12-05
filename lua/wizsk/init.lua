@@ -6,7 +6,7 @@ require("wizsk.plugins.mason")
 require("wizsk.plugins.telescope")
 require("wizsk.plugins.lsp")
 -- require("wizsk.plugins.zenmode")
--- require("wizsk.plugins.harpoon")
+require("wizsk.plugins.harpoon")
 require("wizsk.plugins.undotree")
 
 local augroup = vim.api.nvim_create_augroup
